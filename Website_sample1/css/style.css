@@ -42,6 +42,7 @@ body {
 	text-transform: uppercase;
 	backface-visibility: hidden;
 	margin-bottom: 60px;
+	margin-top: -120px;
 }
 
 .heading-primary-main {
@@ -63,7 +64,7 @@ body {
 .heading-primary-sub {
 	display: block;
 	font-size: 20px;
-	font-weight: 400;
+	font-weight: 600;
 	letter-spacing: 17.4px;
 
 	animation: moveInRight 1s ease-out;
@@ -76,26 +77,6 @@ body {
 	transform: translate(-50%, -50%);
 	text-align: center;
 }
-
-/* @keyframes moveInLeft {
-	0% {
-		opacity: 0;
-		transform: translate(-300px) rotate(0deg);
-	}
-
-	60% {
-		transform: rotate(180deg);
-	}
-
-	80% {
-		transform: translate(10px) rotate(180deg);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translate(0) rotate(180deg);
-	}
-} */
 
 @keyframes moveInLeft {
 	0% {
