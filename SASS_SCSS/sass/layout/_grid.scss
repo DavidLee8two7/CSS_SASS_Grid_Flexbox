@@ -1,0 +1,21 @@
+.row {
+    max-width: $grid-width;
+    background-color: #eee;
+    margin: 0 auto; // to center to block element
+    
+    &:not(:last-child) {
+        margin-bottom: $gutter-vertical;
+    }
+
+    @include clearfix; // .row::after { }
+
+    .col-1-of-2 {
+       width: calc((100% - #{$gutter-horizontal}) / 2);
+       background-color: orangered;
+       float: left; // float collapses height = 0 We use clearfix hack
+
+       &:not(:last-child) {
+           margin-right: $gutter-horizontal;
+       }
+    }
+}

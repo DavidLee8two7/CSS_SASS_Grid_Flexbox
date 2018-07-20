@@ -1,0 +1,11 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both; // left and right
+    }
+}
+
+// what the clearfix does is to append a pseudo element after the element which will then clear these floats.
+// What we can do is to use the & operator
+// .row::after { }
