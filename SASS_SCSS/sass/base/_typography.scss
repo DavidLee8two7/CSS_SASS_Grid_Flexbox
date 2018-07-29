@@ -1,9 +1,10 @@
 body {
-	font-family: 'Lato', Times, serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 400;
+	/*font-size: 16px;*/
 	line-height: 1.7;
-	color: #777;
-	padding: 3rem;
+	color: $color-grey-dark;
+	// padding: 3rem;
 }
 
 .heading-primary {
@@ -24,9 +25,9 @@ body {
 		animation-timing-function: ease-out;
 
 		/*
-		animation-delay: 3s;
-		animation-iteration-count: 3;
-		*/
+        animation-delay: 3s;
+        animation-iteration-count: 3;
+        */
 	}
 
 	&--sub {
@@ -49,7 +50,7 @@ body {
 		$color-primary-dark
 	);
 	-webkit-background-clip: text;
-	color: transparent; // 글씨체 아래 배경 색상을 위로 올리는 기법
+	color: transparent;
 	letter-spacing: 0.2rem;
 	transition: all 0.2s;
 
