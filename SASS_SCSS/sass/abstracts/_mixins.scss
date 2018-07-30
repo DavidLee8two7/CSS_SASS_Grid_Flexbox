@@ -1,9 +1,16 @@
 @mixin clearfix {
-    &::after {
-        content: "";
-        display: table;
-        clear: both; // left and right
-    }
+	&::after {
+		content: '';
+		display: table;
+		clear: both; // left and right
+	}
+}
+
+@mixin absCenter {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 // what the clearfix does is to append a pseudo element after the element which will then clear these floats.
