@@ -1,28 +1,29 @@
-.challenge {
+.container {
   width: 1000px;
   margin: 30px auto;
+  background-color: #ddd;
   display: grid;
-  grid-template-rows: 100px 200px 400px 100px;
-  grid-template-columns: repeat(3, 1fr) 200px;
-  grid-gap: 30px;
-  grid-template-areas: 'header header . .' 'box-1 box-2 box-3 side' 'main main main side' 'footer footer footer footer'; }
-  .challenge > * {
+  grid-template-rows: repeat(2, minmax(150px, min-content));
+  grid-template-columns: minmax(200px, 50%) repeat(3, 1fr); }
+  .container .item {
     background-color: orangered;
-    padding: 20px;
+    padding: 10px;
     color: white;
     font-size: 30px;
     font-family: sans-serif; }
-  .challenge .header {
-    grid-area: header; }
-  .challenge .small-box-1 {
-    grid-area: box-1; }
-  .challenge .small-box-2 {
-    grid-area: box-2; }
-  .challenge .small-box-3 {
-    grid-area: box-3; }
-  .challenge .sidebar {
-    grid-area: side; }
-  .challenge .main-content {
-    grid-area: main; }
-  .challenge .footer {
-    grid-area: footer; }
+    .container .item--1 {
+      background-color: orangered; }
+    .container .item--2 {
+      background-color: yellowgreen; }
+    .container .item--3 {
+      background-color: blueviolet; }
+    .container .item--4 {
+      background-color: palevioletred; }
+    .container .item--5 {
+      background-color: royalblue; }
+    .container .item--6 {
+      background-color: goldenrod; }
+    .container .item--7 {
+      background-color: crimson; }
+    .container .item--8 {
+      background-color: gray; }
