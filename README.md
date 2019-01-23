@@ -1,3 +1,3 @@
 # CSS_SASS_Grid_Flexbox
 
-3 websites for just front end
+(3) Front-end projects practicing CSS, Flexbox & SASS mainly.
